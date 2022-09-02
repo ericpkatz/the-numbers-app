@@ -5,7 +5,8 @@ const { INTEGER, VIRTUAL } = Sequelize;
 
 const Item = conn.define('item', {
   data: {
-    type: INTEGER
+    type: INTEGER,
+    allowNull: false
   },
   isOdd: {
     type: VIRTUAL,
