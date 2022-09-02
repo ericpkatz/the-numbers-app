@@ -3,6 +3,9 @@ const { useState, useEffect } = React;
 import ReactDOM from 'react-dom/client';
 import axios from 'axios';
 import Summary from './Summary';
+import { faker } from '@faker-js/faker';
+
+console.log(faker.commerce.product());
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 
